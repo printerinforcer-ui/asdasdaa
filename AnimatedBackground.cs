@@ -143,9 +143,10 @@ namespace ZexQoLMenu
         /// <summary>
         /// Subtle pulse: gently varies opacity in and out.
         /// </summary>
+        const float Pi = 3.14159265f;
         private float ApplyPulseAnimation(float baseAlpha)
         {
-            float pulse = Mathf.Sin(animationTimer * 2f * Mathf.PI) * 0.5f + 0.5f; // 0 to 1
+            float pulse = Mathf.Sin(animationTimer * 2f * Pi) * 0.5f + 0.5f; // 0 to 1
             float variation = Mathf.Lerp(1f - backgroundAnimationIntensity, 1f, pulse);
             return baseAlpha * variation;
         }
