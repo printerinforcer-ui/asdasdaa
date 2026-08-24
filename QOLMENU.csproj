@@ -23,6 +23,7 @@
 
   <!-- SPLIT partials only — do NOT include old monolith Plugin.cs -->
   <ItemGroup>
+    <Compile Include="AnimatedBackground.cs" />
     <Compile Include="Plugin.Core.cs" />
     <Compile Include="Plugin.Configuration.cs" />
     <Compile Include="UI.cs" />
@@ -81,6 +82,9 @@
     <Reference Include="UnityEngine.InputLegacyModule">
       <HintPath>$(ManagedDir)\UnityEngine.InputLegacyModule.dll</HintPath>
       <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\KoboldKare\KoboldKare_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule" Condition="Exists('$(ManagedDir)\UnityEngine.UIModule.dll')">
       <HintPath>$(ManagedDir)\UnityEngine.UIModule.dll</HintPath>

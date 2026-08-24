@@ -360,7 +360,7 @@ namespace ZexQoLMenu
 
             // Animated / tinted background (hue + opacity apply here).
             // Avoid GUI.skin.window chrome so no black title bar is drawn.
-            DrawMenuBackground();
+            DrawAnimatedMenuBackground();
 
             // Soft dark fill so content stays readable if the sprite sheet is bright (hue-tinted).
             Color prevBg = GUI.color;

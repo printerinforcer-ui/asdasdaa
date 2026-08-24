@@ -589,6 +589,7 @@ namespace ZexQoLMenu
                     configRadarSize.Value = Mathf.Clamp(playerRadarRect.width, 120f, 420f);
             }
             catch { }
+            InitializeBackgroundAnimationConfig();
         }
     }
 }

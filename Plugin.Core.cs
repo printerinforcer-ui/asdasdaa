@@ -854,6 +854,9 @@ namespace ZexQoLMenu
             // RGB CYCLE: advance hue through the full spectrum (LOCK freezes; GREY disables)
             TickMenuHueCycle(dt);
 
+            // BACKGROUND TESTING
+            TickBackgroundAnimation(Time.unscaledDeltaTime);
+
             // Server-browser position restore after rejoin (Teleport toggle)
             if (browseRestoreActive)
             {
